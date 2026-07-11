@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>屋内ドローンショー | 東京理科大学 宇宙クラブ</title>
+    <meta name="description" content="東京理科大学創域理工学部 宇宙クラブが学園祭で挑戦する、学生が0から創る日本初の屋内ドローンショー。3台のドローンによる幻想的なフライト。">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* Specific overrides for the dark show section */
+        .showcase-dark {
+            background-color: #050711;
+            color: #f0f2f5;
+            padding: 8rem 5%;
+        }
+        .showcase-dark h2 {
+            color: #00d2ff;
+        }
+        .showcase-dark p {
+            color: #9ba1b3;
+        }
+        .showcase-img {
+            width: 100%;
+            border-radius: 16px;
+            box-shadow: 0 0 50px rgba(0, 210, 255, 0.2);
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        .showcase-img::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(135deg, rgba(0, 210, 255, 0.1), transparent);
+            pointer-events: none;
+            border-radius: 16px;
+        }
+        .showcase-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .feature-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        .feature-item h3 {
+            color: #fff;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar" class="scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="logo" style="text-decoration: none;">TUS Space Club</a>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="contest.html">Contest</a></li>
+                <li><a href="index.html#technology">Technology</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="drone-show.html" style="color: var(--accent-blue);">Drone Show</a></li>
+                <li><a href="index.html#sponsorship">Sponsor Plans</a></li>
+                <li><a href="index.html#contact" class="btn-primary-small">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-hero">
+        <div class="page-hero-content fade-in-up">
+            <h1>INDOOR DRONE SHOW</h1>
+            <p>学生が0から創る、屋内ドローンショー</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-container">
+            <div class="section-header fade-in">
+                <h2>学園祭での新たな挑戦</h2>
+                <p>飛行ロボットコンテストで培った技術を、エンターテインメントの領域へ</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text fade-in-left">
+                    <p>東京理科大学 宇宙クラブでは、これまでの機体開発や自律制御の知見を活かし、学園祭にて「屋内ドローンショー」を実施します。</p>
+                    <p>ハードウェアの設計から、複数のドローンを同時に制御するソフトウェア群制御（Swarm Control）システムまで、すべてを学生の手で一から開発。安全基準の厳しい屋内環境において、音楽と光が連動する幻想的なフライトショーを披露し、多くの人々に航空宇宙工学の魅力と可能性を伝えます。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dark Section for Show Visuals -->
+        <section class="showcase-dark">
+            <div class="section-header fade-in">
+                <h2>The Performance</h2>
+                <p>3台のドローンが織りなす光と軌跡</p>
+            </div>
+            
+            <div style="max-width: 1000px; margin: 0 auto; text-align: center;" class="fade-in-up">
+                <div class="showcase-img">
+                    <img src="file:///C:/Users/ymori/.gemini/antigravity/brain/2c7c9287-30c3-4913-a250-2dfe39f6791a/drone_show_1783418619720.png" alt="屋内ドローンショーのイメージ" style="width: 100%; border-radius: 16px; display: block;">
+                </div>
+            </div>
+
+            <div class="showcase-features fade-in-up" style="animation-delay: 0.2s;">
+                <div class="feature-item">
+                    <h3>3-Drone Swarm</h3>
+                    <p>3台のドローンをミリ秒単位で同期させ、互いに衝突することなくフォーメーションを組む高度な自律群制御アルゴリズムを開発しています。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Custom LED System</h3>
+                    <p>軽量化と高輝度を両立したオリジナルLED基板を搭載。暗闇の中で鮮やかな光の軌跡（ライトトレイル）を描き出します。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Safety First</h3>
+                    <p>屋内での実施に向け、プロペラガードの完全装備や通信フェールセーフ機能など、観客の安全を最優先したハード・ソフト両面のフェールセーフを実装しています。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-container" style="text-align: center;">
+            <div class="fade-in-up">
+                <h2>Support Our Challenge</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 2rem;">この革新的なドローンショープロジェクトへのご協賛・機材提供をお待ちしております。</p>
+                <a href="index.html#sponsorship" class="btn-primary">Sponsorship Plans</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo" style="color: #ffffff;">TUS Space Club</div>
+            <p>東京理科大学 創域理工学部 宇宙クラブ</p>
+            <p class="copyright">&copy; 2026 TUS Space Club. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
