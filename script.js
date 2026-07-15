@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const navPlaceholder = document.getElementById('navbar-placeholder');
     if (navPlaceholder) {
         const isScrolled = navPlaceholder.getAttribute('data-scrolled') === 'true';
-        navPlaceholder.outerHTML = `<nav id="navbar" ${isScrolled ? 'class="scrolled"' : ''}>${NAVBAR_HTML}</nav>`;
+        navPlaceholder.outerHTML = `<nav id="navbar" ${isScrolled ? 'class="scrolled" data-scrolled="true"' : ''}>${NAVBAR_HTML}</nav>`;
     }
     
     const footerPlaceholder = document.getElementById('footer-placeholder');
@@ -13,9 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Navbar Scroll Effect ---
     const navbar = document.getElementById('navbar');
+    const isAlwaysScrolled = navbar && navbar.getAttribute('data-scrolled') === 'true';
     
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
+        if (isAlwaysScrolled || window.scrollY > 50) {
             navbar.classList.add('scrolled');
         } else {
             navbar.classList.remove('scrolled');
