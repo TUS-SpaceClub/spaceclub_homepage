@@ -40,3 +40,35 @@ const FOOTER_HTML = `
             <p>&copy; 2026 TUS Space Club. All Rights Reserved.</p>
         </div>
 `;
+
+const SIDE_DRAWER_HTML = `
+    <div id="side-drawer" class="side-drawer" aria-hidden="true">
+        <button id="close-drawer" class="close-drawer" aria-label="Close menu">×</button>
+        <ul class="drawer-links">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="contest.html">Contest</a></li>
+            <li><a href="index.html#technology">Technology</a></li>
+            <li><a href="teams.html">Teams</a></li>
+            <li><a href="drone-show.html">Drone Show</a></li>
+            <li><a href="archive.html">Archive</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="index.html#sponsorship">Sponsor Plans</a></li>
+            <li><a href="index.html#contact">Contact Us</a></li>
+        </ul>
+    </div>
+    <div id="drawer-overlay" class="drawer-overlay" tabindex="-1" aria-hidden="true"></div>
+`;
+
+// Inject components immediately (since script is loaded at the end of body)
+const navPlaceholder = document.getElementById('navbar-placeholder');
+if (navPlaceholder) navPlaceholder.innerHTML = NAVBAR_HTML;
+
+const footerPlaceholder = document.getElementById('footer-placeholder');
+if (footerPlaceholder) {
+    footerPlaceholder.innerHTML = FOOTER_HTML;
+    // Add the class 'footer' if not already present on the placeholder
+    footerPlaceholder.classList.add('footer');
+}
+
+// Inject side drawer to the end of the body
+document.body.insertAdjacentHTML('beforeend', SIDE_DRAWER_HTML);
