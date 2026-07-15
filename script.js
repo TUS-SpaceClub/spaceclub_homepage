@@ -1,4 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // --- Component Injection ---
+    const navPlaceholder = document.getElementById('navbar-placeholder');
+    if (navPlaceholder) {
+        const isScrolled = navPlaceholder.getAttribute('data-scrolled') === 'true';
+        navPlaceholder.outerHTML = `<nav id="navbar" ${isScrolled ? 'class="scrolled"' : ''}>${NAVBAR_HTML}</nav>`;
+    }
+    
+    const footerPlaceholder = document.getElementById('footer-placeholder');
+    if (footerPlaceholder) {
+        footerPlaceholder.outerHTML = `<footer>${FOOTER_HTML}</footer>`;
+    }
+
     // --- Navbar Scroll Effect ---
     const navbar = document.getElementById('navbar');
     
