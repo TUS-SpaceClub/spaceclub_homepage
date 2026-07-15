@@ -50,62 +50,68 @@
 
                     <!-- Steps -->
                     <h3 style="text-align: center; margin-bottom: 1.5rem;">大会までの道のり</h3>
-                    <div class="step-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 3rem;">
-                        <div style="background: #fff; padding: 1.5rem; border-radius: 12px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #eee;">
-                            <div style="font-size: 2rem; font-weight: 900; color: rgba(0, 75, 147, 0.1); margin-bottom: -0.5rem;">01</div>
-                            <h4 style="color: var(--accent-blue); margin-bottom: 0.5rem;">企画・設計</h4>
-                            <p style="font-size: 0.9rem; color: var(--text-secondary);">ミッションに合わせた機体を設計</p>
+                    <div class="step-container" aria-label="大会までの道のり">
+                        <div class="step-card">
+                            <div class="step-badge">01</div>
+                            <div class="step-icon">💡</div>
+                            <h4>企画・設計</h4>
+                            <p>大会のミッションを確認し、機体構成や戦略を固めます。</p>
                         </div>
-                        <div style="background: #fff; padding: 1.5rem; border-radius: 12px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #eee;">
-                            <div style="font-size: 2rem; font-weight: 900; color: rgba(0, 75, 147, 0.1); margin-bottom: -0.5rem;">02</div>
-                            <h4 style="color: var(--accent-blue); margin-bottom: 0.5rem;">開発・製作</h4>
-                            <p style="font-size: 0.9rem; color: var(--text-secondary);">機体や自律飛行プログラムを製作</p>
+                        <div class="step-card">
+                            <div class="step-badge">02</div>
+                            <div class="step-icon">🛠️</div>
+                            <h4>開発・製作</h4>
+                            <p>機体や自律飛行プログラムを組み立て、試作していきます。</p>
                         </div>
-                        <div style="background: #fff; padding: 1.5rem; border-radius: 12px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #eee;">
-                            <div style="font-size: 2rem; font-weight: 900; color: rgba(0, 75, 147, 0.1); margin-bottom: -0.5rem;">03</div>
-                            <h4 style="color: var(--accent-blue); margin-bottom: 0.5rem;">試験飛行</h4>
-                            <p style="font-size: 0.9rem; color: var(--text-secondary);">テストを重ねて操縦を向上</p>
+                        <div class="step-card">
+                            <div class="step-badge">03</div>
+                            <div class="step-icon">✈️</div>
+                            <h4>試験飛行</h4>
+                            <p>何度も飛ばして、操縦者の技能の習熟や機体の性能を確認、改良します。</p>
                         </div>
-                        <div style="background: #fff; padding: 1.5rem; border-radius: 12px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #eee;">
-                            <div style="font-size: 2rem; font-weight: 900; color: rgba(0, 75, 147, 0.1); margin-bottom: -0.5rem;">04</div>
-                            <h4 style="color: var(--accent-blue); margin-bottom: 0.5rem;">本番</h4>
-                            <p style="font-size: 0.9rem; color: var(--text-secondary);">ミッションの正確な完遂を目指す</p>
+                        <div class="step-card">
+                            <div class="step-badge">04</div>
+                            <div class="step-icon">🏁</div>
+                            <h4>本番</h4>
+                            <p>最終調整を重ね、ミッションを確実に完遂するために挑みます。</p>
                         </div>
                     </div>
 
                     <!-- Categories -->
-                    <h3 style="text-align: center; margin-bottom: 1.5rem;">2つの挑戦部門</h3>
-                    <div class="contest-comparison" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
-                        <div style="background: #fff; padding: 2rem; border-radius: 16px; border-top: 5px solid var(--accent-blue); box-shadow: 0 8px 20px rgba(0,0,0,0.05);">
-                            <h4 style="font-size: 1.2rem; margin-bottom: 0.5rem;">🤖 自律部門</h4>
-                            <p style="color: var(--text-secondary); margin-bottom: 1rem; font-size: 0.95rem;">プログラムが全てを判断し、自動で飛行。</p>
-                            <ul style="list-style: none; padding-left: 0; font-size: 0.9rem;">
-                                <li style="margin-bottom: 0.5rem; padding-left: 1.2rem; position: relative;"><span style="position: absolute; left: 0; color: var(--accent-blue);">✔</span> GPS不要の室内高度維持</li>
-                                <li style="padding-left: 1.2rem; position: relative;"><span style="position: absolute; left: 0; color: var(--accent-blue);">✔</span> センサーによる障害物回避</li>
+                    <h3 style="text-align: center; margin-bottom: 1.5rem;">大会の4つの競技部門</h3>
+                    <div class="contest-cards-container">
+                        <div class="contest-card" style="border-top-color: #f59e0b;">
+                            <h4>🎮 統合部門</h4>
+                            <p>操縦技術と機体性能の総合力を競うメイン部門。</p>
+                            <ul>
+                                <li><span>✔</span> 救援物資の正確な投下</li>
+                                <li><span>✔</span> 宙返りや貨物運搬など多彩なミッション</li>
                             </ul>
                         </div>
-                        <div style="background: #fff; padding: 2rem; border-radius: 16px; border-top: 5px solid #f59e0b; box-shadow: 0 8px 20px rgba(0,0,0,0.05);">
-                            <h4 style="font-size: 1.2rem; margin-bottom: 0.5rem;">🎮 一般部門</h4>
-                            <p style="color: var(--text-secondary); margin-bottom: 1rem; font-size: 0.95rem;">パイロットによるマニュアル操縦。</p>
-                            <ul style="list-style: none; padding-left: 0; font-size: 0.9rem;">
-                                <li style="margin-bottom: 0.5rem; padding-left: 1.2rem; position: relative;"><span style="position: absolute; left: 0; color: #f59e0b;">✔</span> 極限の集中力と操縦テクニック</li>
-                                <li style="padding-left: 1.2rem; position: relative;"><span style="position: absolute; left: 0; color: #f59e0b;">✔</span> 意のままに動く機体の設計</li>
+                        <div class="contest-card" style="border-top-color: var(--accent-blue);">
+                            <h4>🤖 完全自動部門</h4>
+                            <p>プログラムが全てを判断し、完全自動（ハンズオフ）で飛行。</p>
+                            <ul>
+                                <li><span>✔</span> 8の字飛行や無動力滑空の自律制御</li>
+                                <li><span>✔</span> センサーによる位置推定と自動着陸</li>
                             </ul>
                         </div>
-                    </div>
-                </div>
-                <div class="contest-stats fade-in-right">
-                    <div class="stat-card">
-                        <h4>自律</h4>
-                        <p>センサー &amp; AI</p>
-                    </div>
-                    <div class="stat-card">
-                        <h4>非自律</h4>
-                        <p>遠隔操縦スキル</p>
-                    </div>
-                    <div class="stat-card">
-                        <h4>総合力</h4>
-                        <p>設計・制御・運用の融合</p>
+                        <div class="contest-card" style="border-top-color: #10b981;">
+                            <h4>💡 ユニークデザイン部門</h4>
+                            <p>独自の機体形式と自作ミッションに挑む。</p>
+                            <ul>
+                                <li><span>✔</span> 機体設計の独創性とアイデア</li>
+                                <li><span>✔</span> 設定したミッションの有用性・面白さ</li>
+                            </ul>
+                        </div>
+                        <div class="contest-card" style="border-top-color: #8b5cf6;">
+                            <h4>🔰 ビギナー部門</h4>
+                            <p>設計・製作力や飛行性能の基礎を競う入門部門。</p>
+                            <ul>
+                                <li><span>✔</span> 物資投下や水平旋回などの基礎課題</li>
+                                <li><span>✔</span> 手放し飛行による機体の安定性証明</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

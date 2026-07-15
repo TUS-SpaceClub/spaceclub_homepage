@@ -7,6 +7,7 @@ const NAVBAR_HTML = `
                 <li><a href="index.html#technology">Technology</a></li>
                 <li><a href="teams.html">Teams</a></li>
                 <li><a href="drone-show.html">Drone Show</a></li>
+                <li><a href="archive.html">Archive</a></li>
                 <li><a href="news.html">News</a></li>
                 <li><a href="index.html#sponsorship">Sponsor Plans</a></li>
                 <li><a href="index.html#contact" class="btn-primary-small">Contact Us</a></li>

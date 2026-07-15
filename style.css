@@ -536,6 +536,153 @@ h2 {
     font-size: 0.95rem;
 }
 
+/* --- Contest Steps (Timeline) --- */
+.step-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem 1.25rem;
+    margin-bottom: 4rem;
+    align-items: stretch;
+}
+
+.step-card {
+    background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+    padding: 1.4rem 1.2rem 1.2rem;
+    border-radius: 18px;
+    text-align: left;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    border: 1px solid #e7eef7;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 190px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.step-card::before {
+    content: '';
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 4px;
+    background: linear-gradient(180deg, var(--accent-blue), #5cc8ff);
+}
+
+.step-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 32px rgba(0,0,0,0.09);
+    border-color: var(--accent-blue);
+}
+
+.step-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 999px;
+    background: #eef6ff;
+    color: var(--accent-blue);
+    font-weight: 800;
+    font-size: 0.95rem;
+    margin-bottom: 0.85rem;
+}
+
+.step-icon {
+    font-size: 1.3rem;
+    margin-bottom: 0.6rem;
+}
+
+.step-card h4 {
+    color: #0f172a;
+    margin-bottom: 0.55rem;
+    font-size: 1.1rem;
+}
+
+.step-card p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    .step-container {
+        grid-template-columns: 1fr;
+    }
+
+    .step-card {
+        max-width: 480px;
+        margin: 0 auto;
+    }
+}
+
+/* --- Contest Categories Section --- */
+.contest-cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    align-items: stretch;
+}
+
+.contest-card {
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 16px;
+    border-top: 5px solid transparent; /* Set via inline style */
+    box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    border-left: 1px solid var(--card-border);
+    border-right: 1px solid var(--card-border);
+    border-bottom: 1px solid var(--card-border);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.contest-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.contest-card h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.contest-card p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.7;
+    flex-grow: 1;
+}
+
+.contest-card ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 0.95rem;
+}
+
+.contest-card ul li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.5;
+}
+
+.contest-card ul li span {
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+@media (max-width: 900px) {
+    .contest-cards-container {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* --- Sponsorship Section --- */
 .plans-container {
     display: grid;
