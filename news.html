@@ -3,14 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; url=index.html">
-    <div id="navbar-placeholder" data-scrolled="true"></div>
-    <title>Redirecting | TUS Space Club</title>
+    <title>News | TUS Space Club</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main style="min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 2rem;">
-        <p>ホームへ移動します。</p>
+    <div id="navbar-placeholder" data-scrolled="true"></div>
+
+    <header class="page-hero">
+        <div class="page-hero-content fade-in-up">
+            <h1>NEWS</h1>
+            <p>活動報告・お知らせ</p>
+        </div>
+    </header>
+
+    <main style="min-height: 50vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 4rem 2rem; background-color: #fafafa;">
+        <div class="fade-in-up" style="max-width: 600px; padding: 4rem 2rem; background: #fff; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid #eee; width: 100%;">
+            <div style="font-size: 4rem; margin-bottom: 1rem;">🚀</div>
+            <h2 style="font-size: 2.5rem; color: var(--accent-blue); margin-bottom: 1rem; letter-spacing: 2px;">COMING SOON</h2>
+            <p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 1.6;">
+                現在、記事ページを準備中です。<br>
+                宇宙クラブの最新の活動報告や大会の様子を<br>順次公開していきますので、今しばらくお待ちください！
+            </p>
+            <div style="margin-top: 3rem;">
+                <a href="index.html" class="btn-primary" style="display: inline-block;">トップページに戻る</a>
+            </div>
+        </div>
     </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="components.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
