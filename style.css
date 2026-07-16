@@ -197,6 +197,7 @@ h2 {
     font-size: 0.95rem;
     font-weight: 600;
     transition: color 0.3s;
+    white-space: nowrap;
 }
 
 .nav-links a.btn-primary-small,
