@@ -93,6 +93,33 @@ h2 {
     transform: translateY(-2px);
 }
 
+.btn-secondary {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #fff;
+    transform: translateY(-2px);
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
 /* --- Navigation --- */
 #navbar {
     position: fixed;
@@ -446,13 +473,6 @@ h2 {
     border-radius: 16px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.02);
     text-align: center;
-    transition: transform 0.3s;
-}
-
-.stat-card:hover {
-    transform: translateX(-10px);
-    border-color: var(--accent-blue);
-    box-shadow: -10px 0 20px rgba(0, 75, 147, 0.05);
 }
 
 .stat-card h4 {
