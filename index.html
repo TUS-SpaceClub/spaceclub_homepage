@@ -166,19 +166,15 @@
             <div class="contact-box fade-in">
                 <h2>Partner With Us</h2>
                 <p>スポンサーシップに関するお問い合わせ、技術交流のご相談など、お気軽にご連絡ください。<br>学生担当者より数日中にご返信いたします。</p>
-                <form class="contact-form" action="https://formsubmit.co/spaceclub.tus.noda@gmail.com" method="POST">
-                    <!-- FormSubmit設定: スパム対策とリダイレクト先 -->
-                    <input type="hidden" name="_subject" value="【宇宙クラブ】新しいスポンサーシップのお問い合わせ">
-                    <input type="hidden" name="_captcha" value="false">
-                    
+                <form id="sponsor-form" class="contact-form" action="https://formspree.io/f/xqereeqg" method="POST">
                     <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="企業名 / 担当者名" required>
+                        <input type="text" id="company" name="company" placeholder="企業名 / 担当者名" required>
                     </div>
                     <div class="form-group">
                         <input type="email" id="email" name="email" placeholder="メールアドレス" required>
                     </div>
                     <div class="form-group">
-                        <select id="interest" name="interest">
+                        <select id="plan" name="plan" required>
                             <option value="">興味のあるプランを選択...</option>
                             <option value="platinum">Platinumプラン</option>
                             <option value="gold">Goldプラン</option>
@@ -189,8 +185,55 @@
                     <div class="form-group">
                         <textarea id="message" name="message" rows="4" placeholder="メッセージ（任意）"></textarea>
                     </div>
-                    <button type="submit" class="btn-primary">メッセージを送信する</button>
+                    <button type="submit" id="submit-btn" class="btn-primary">メッセージを送信する</button>
+                    <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
                 </form>
+                <script>
+                (function() {
+                    var form = document.getElementById('sponsor-form');
+                    var btn = document.getElementById('submit-btn');
+                    var status = document.getElementById('form-status');
+                    var btnOriginalText = btn.textContent;
+                    var submitting = false;
+
+                    form.addEventListener('submit', function(e) {
+                        e.preventDefault();
+
+                        // 多重送信防止
+                        if (submitting) return;
+                        submitting = true;
+
+                        // 送信中の状態
+                        btn.disabled = true;
+                        btn.textContent = '送信中...';
+                        status.textContent = '';
+                        status.className = 'form-status';
+
+                        fetch(form.action, {
+                            method: 'POST',
+                            body: new FormData(form),
+                            headers: {
+                                'Accept': 'application/json'
+                            }
+                        }).then(function(response) {
+                            if (response.ok) {
+                                status.textContent = 'お問い合わせを受け付けました。担当者よりご連絡いたします。';
+                                status.className = 'form-status form-status--success';
+                                form.reset();
+                            } else {
+                                throw new Error('送信失敗');
+                            }
+                        }).catch(function() {
+                            status.textContent = '送信に失敗しました。入力内容を確認して、もう一度お試しください。';
+                            status.className = 'form-status form-status--error';
+                        }).finally(function() {
+                            btn.disabled = false;
+                            btn.textContent = btnOriginalText;
+                            submitting = false;
+                        });
+                    });
+                })();
+                </script>
             </div>
         </section>
     </main>
