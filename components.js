@@ -7,6 +7,7 @@ const NAVBAR_HTML = `
                 <li><a href="index.html#technology">Technology</a></li>
                 <li><a href="teams.html">Teams</a></li>
                 <li><a href="drone-show.html">Drone Show</a></li>
+                <li><a href="ridaisai.html">理大祭2026</a></li>
                 <li><a href="archive.html">Archive</a></li>
                 <li><a href="news.html">News</a></li>
                 <li><a href="index.html#support">ご支援について</a></li>
@@ -33,6 +34,7 @@ const FOOTER_HTML = `
                 <a href="index.html">Home</a> &nbsp;|&nbsp; 
                 <a href="contest.html">Contest</a> &nbsp;|&nbsp;
                 <a href="teams.html">Teams</a> &nbsp;|&nbsp;
+                <a href="ridaisai.html">理大祭2026</a> &nbsp;|&nbsp;
                 <a href="news.html">News</a>
             </div>
         </div>
@@ -50,6 +52,7 @@ const SIDE_DRAWER_HTML = `
             <li><a href="index.html#technology">Technology</a></li>
             <li><a href="teams.html">Teams</a></li>
             <li><a href="drone-show.html">Drone Show</a></li>
+                <li><a href="ridaisai.html">理大祭2026</a></li>
             <li><a href="archive.html">Archive</a></li>
             <li><a href="news.html">News</a></li>
             <li><a href="index.html#support">ご支援について</a></li>
