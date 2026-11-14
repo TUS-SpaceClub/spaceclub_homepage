@@ -1,0 +1,212 @@
+/* The club home stays the club home; the festival is a linked invitation. */
+.club-home .hero { min-height: 740px; }
+.club-home .hero-content { padding-top: 70px; padding-bottom: 85px; }
+.home-festival-banner { display: flex; align-items: center; gap: 22px; max-width: 700px; margin: 30px auto 0; padding: 18px 24px; background: #071d31ed; color: #fff; border: 1px solid #83cfff; border-radius: 12px; text-decoration: none; text-align: left; box-shadow: 0 8px 28px #0003; }
+.home-festival-banner:hover { background: #123d60; border-color: #fff; }
+.home-festival-badge { padding: 7px 12px; border: 1px solid #83cfff; border-radius: 5px; font-size: .9rem; font-weight: 700; white-space: nowrap; }
+.home-festival-message { flex: 1; font-size: 1.25rem; font-weight: 700; line-height: 1.5; }
+.home-festival-message > span { display: block; color: #cce5f6; font-size: .9rem; margin-top: 5px; font-weight: 400; }
+.home-festival-arrow { font-size: 1.8rem; }
+.home-festival-banner:focus-visible { outline: 3px solid #fff; outline-offset: 5px; }
+
+/* A short overview, followed by visitor-led detail routes. */
+.festival-visit-page { background: #fff; }
+.route-container { width: min(1184px, calc(100% - 64px)); margin-inline: auto; }
+.festival-visit-page :is(section,article,header)[id] { scroll-margin-top: 96px; }
+.route-kicker { color: #1458aa; font-weight: 700; font-size: .9rem; letter-spacing: .06em; }
+.overview-header { padding-top: 112px; padding-bottom: 25px; }
+.festival .overview-header h1 { font-size: clamp(2.6rem, 4vw, 3.6rem); margin-top: 9px; line-height: 1.25; }
+.overview-catch { font-weight: 700; font-size: 1.3rem; line-height: 1.7; margin-top: 14px; }
+.overview-catch > span { display: inline-block; }
+.overview-nowrap { white-space: nowrap; }
+.overview-intro { color: #496176; font-size: 1rem; line-height: 1.8; margin-top: 6px; }
+.overview-facts { display: grid; grid-template-columns: 1.2fr .85fr 1.35fr; border-block: 1px solid #dbe4ee; background: #f4f8fc; padding: 18px 24px; gap: 24px; }
+.overview-facts dt { color: #1458aa; font-size: .9rem; font-weight: 700; margin-bottom: 5px; }
+.overview-facts dd { margin: 0; font-size: 1.05rem; font-weight: 700; line-height: 1.8; }
+.overview-facts dd > span { display: block; font-size: .95rem; font-weight: 400; }
+.overview-facts time { display: inline-block; }
+.overview-facts dd > a { display: block; color: #1458aa; font-size: .95rem; text-underline-offset: 4px; }
+.overview-facts strong { font-size: 1.35rem; }
+.overview-programs { padding-block: 32px; }
+.overview-section-title { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; margin-bottom: 20px; }
+.festival .overview-section-title h2 { color: #102c49; font-size: 1.6rem; }
+.overview-section-title p { font-size: 1rem; color: #526a80; }
+.overview-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+.overview-card { min-width: 0; border: 1px solid #dbe4ee; border-radius: 12px; overflow: hidden; background: #fff; }
+.overview-card-link { display: flex; flex-direction: column; height: 100%; color: #102c49; text-decoration: none; }
+.overview-card-link:hover { background: #f4f8fc; }
+.overview-card-link > img { display: block; width: 100%; height: auto; aspect-ratio: 1.7; object-fit: contain; background: #f1f5f9; border-bottom: 1px solid #dbe4ee; }
+.overview-card-copy { display: flex; flex: 1; flex-direction: column; padding: 18px; }
+.overview-card-kicker { font-size: .85rem; color: #1458aa; font-weight: 700; line-height: 1.7; margin-bottom: 6px; }
+.festival .overview-card h3 { font-size: 1.15rem; line-height: 1.5; min-height: 3em; }
+.overview-card-description { color: #496176; font-size: 1rem; line-height: 1.8; margin-block: 10px 14px; }
+.overview-card-meta { display: flex; flex-direction: column; gap: 3px; font-size: .95rem; margin-top: auto; line-height: 1.7; }
+.overview-card-meta span { color: #526a80; font-size: .9rem; }
+.overview-card-action { display: flex; justify-content: space-between; align-items: center; margin-top: 14px; padding-top: 12px; border-top: 1px solid #dbe4ee; color: #1458aa; font-size: 1rem; font-weight: 700; }
+.overview-links { display: flex; flex-wrap: wrap; gap: 12px 26px; padding-block: 0 32px; }
+.overview-links a { color: #526a80; font-size: .9rem; text-underline-offset: 4px; }
+.route-header { padding-block: 116px 30px; }
+.route-back { display: inline-block; font-size: 1rem; color: #1458aa; text-underline-offset: 4px; margin-bottom: 26px; }
+.route-header h1 { font-size: clamp(2.1rem, 3.6vw, 3.3rem); margin-top: 9px; line-height: 1.5; }
+.route-lead { color: #496176; font-size: 1.2rem; line-height: 1.9; margin-top: 16px; }
+.route-facts { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); padding: 20px 24px; border-block: 1px solid #dbe4ee; background: #f4f8fc; gap: 20px; }
+.route-facts dt { color: #526a80; font-size: .9rem; margin-bottom: 7px; }
+.route-facts dd { margin: 0; font-size: 1rem; font-weight: 700; line-height: 1.8; }
+.route-facts time { display: inline-block; }
+.route-feature { display: grid; grid-template-columns: 1fr 1fr; align-items: start; gap: 46px; padding-top: 36px; }
+.route-photo { margin: 0; }
+.route-photo img { display: block; width: 100%; height: auto; max-height: 520px; object-fit: contain; background: #f1f5f9; border: 1px solid #dbe4ee; border-radius: 12px; }
+.route-photo figcaption { font-size: .9rem; color: #526a80; margin-top: 10px; line-height: 1.8; }
+.festival .route-copy h2 { font-size: 1.5rem; margin-bottom: 14px; }
+.route-copy h2:not(:first-child) { margin-top: 28px; }
+.route-copy p { font-size: 1.05rem; line-height: 1.95; color: #496176; margin-bottom: 20px; }
+.route-copy p strong { color: #102c49; }
+.route-section { padding-block: 44px; border-bottom: 1px solid #dbe4ee; }
+.festival .route-section > h2 { font-size: 1.8rem; margin-bottom: 20px; }
+.route-section > p { font-size: 1rem; line-height: 1.9; color: #496176; }
+.route-points { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 24px; }
+.route-points > div { border-left: 3px solid #1458aa; padding: 2px 0 2px 20px; }
+.festival .route-points h3 { font-size: 1.15rem; margin-bottom: 14px; }
+.route-points p { font-size: 1rem; line-height: 1.9; color: #496176; }
+.route-note { color: #526a80; font-size: .95rem; line-height: 1.9; margin-top: 22px; }
+.route-process { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); list-style: none; gap: 24px; }
+.route-process li { padding: 20px; background: #f4f8fc; border-radius: 8px; border: 1px solid #dbe4ee; }
+.route-process strong,.route-process span { display: block; font-size: 1rem; line-height: 1.9; }
+.route-process span { color: #526a80; margin-top: 8px; }
+.route-inline-links { display: flex; flex-wrap: wrap; gap: 20px; }
+.route-end-links { display: flex; flex-wrap: wrap; align-items: center; gap: 24px; padding-block: 38px 55px; }
+.route-access-layout { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 60px; }
+.route-access-figure { width: min(420px,100%); margin: 0 auto; }
+.route-access-figure img { display: block; width: 100%; height: auto; }
+.hikosim-pv-note { font-size: .95rem; line-height: 1.9; margin: 0; padding: 0 22px 20px; color: #d5e4f2; }
+.hikosim-page .route-section h2 { color: #1458aa; font-size: 1.8rem; line-height: 1.6; }
+.hikosim-page .route-points h3 { color: #102c49; }
+.hikosim-page .route-end-links { margin-inline: auto; }
+@media (max-width: 1000px) {
+    .overview-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+    .overview-facts { grid-template-columns: 1fr 1fr; }
+    .overview-facts > div:last-child { grid-column: 1 / -1; }
+    .route-facts { grid-template-columns: 1fr 1fr; }
+    .route-feature { gap: 30px; }
+    .overview-section-title { flex-direction: column; gap: 8px; }
+}
+@media (max-width: 700px) {
+    .club-home .hero { min-height: 780px; }
+    .club-home :is(.fade-in-left, .fade-in-right) { transform: none; }
+    .club-home .hero-content { padding: 100px 20px 90px; }
+    .club-home .hero h1 { font-size: clamp(2rem, 8vw, 3rem); }
+    .home-festival-banner { padding: 15px; gap: 12px; margin-top: 24px; flex-wrap: wrap; }
+    .home-festival-badge { font-size: .85rem; }
+    .home-festival-message { flex: 1 1 190px; font-size: 1.05rem; }
+    .home-festival-message > span { font-size: .85rem; }
+    .home-festival-arrow { display: none; }
+    .route-container { width: calc(100% - 40px); }
+    .overview-header { padding-top: 98px; padding-bottom: 20px; }
+    .overview-header .route-kicker { font-size: .85rem; }
+    .festival .overview-header h1 { font-size: 2.65rem; }
+    .overview-catch { font-size: 1.1rem; margin-top: 12px; }
+    .overview-intro { font-size: 1rem; }
+    .overview-facts { padding: 16px; gap: 14px 16px; }
+    .overview-facts dt { font-size: .85rem; margin-bottom: 4px; }
+    .overview-facts dd { font-size: 1rem; }
+    .overview-facts dd > span,.overview-facts dd > a { font-size: .9rem; }
+    .overview-programs { padding-block: 24px; }
+    .festival .overview-section-title h2 { font-size: 1.4rem; }
+    .overview-section-title p { font-size: .95rem; }
+    .overview-grid { gap: 14px 12px; }
+    .overview-card-copy { padding: 12px; }
+    .overview-card-kicker { font-size: .8rem; min-height: 1.7em; }
+    .festival .overview-card h3 { font-size: 1.05rem; }
+    .overview-card-description { font-size: 1rem; line-height: 1.65; }
+    .overview-card-meta { font-size: .9rem; }
+    .overview-card-meta span { font-size: .85rem; }
+    .overview-card-action { font-size: .95rem; margin-top: 10px; padding-top: 10px; }
+    .overview-links { gap: 14px 20px; padding-bottom: 26px; }
+    .route-header { padding-block: 98px 24px; }
+    .route-header h1 { font-size: 2rem; }
+    .route-lead { font-size: 1.1rem; }
+    .route-back { font-size: .95rem; margin-bottom: 22px; }
+    .route-facts { padding: 18px 16px; gap: 18px; }
+    .route-facts dt { font-size: .85rem; }
+    .route-facts dd { font-size: 1rem; }
+    .route-feature { grid-template-columns: 1fr; padding-top: 30px; gap: 24px; }
+    .route-copy { order: -1; }
+    .route-copy p { font-size: 1rem; }
+    .route-section { padding-block: 32px; }
+    .festival .route-section > h2,.hikosim-page .route-section h2 { font-size: 1.5rem; }
+    .route-points,.route-process,.route-access-layout { grid-template-columns: 1fr; gap: 26px; }
+    .route-points > div { padding-left: 16px; }
+    .festival-visit-page .festival-show-times { grid-template-columns: 1fr 1fr; gap: 20px 0; }
+    .festival-visit-page .festival-show-times li:nth-child(2) { border-right: 0; }
+    .route-end-links { padding-block: 32px 42px; gap: 22px; }
+    .hikosim-pv-note { font-size: .9rem; padding-inline: 12px; }
+}
+@media (prefers-reduced-motion: reduce) { .home-festival-banner,.overview-card-link { transition: none; } }
+
+/* Clear availability, stronger show times, and illustrated experience details. */
+.route-hours-note { display: block; font-size: .9rem; font-weight: 400; color: #496176; margin-top: 4px; }
+.festival-visit-page #schedule .festival-show-times { padding: 0; border: 0; background: none; gap: 18px; }
+.festival-visit-page #schedule .festival-show-times li { padding: 22px 10px; border: 2px solid #174f7e; border-radius: 12px; background: #f1f7fc; }
+.festival-visit-page #schedule .festival-show-times time { color: #102c49; font-weight: 800; }
+.gesture-flow-intro,.gesture-flow-outro { font-size: 1rem; line-height: 1.9; color: #496176; }
+.gesture-flow { display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); gap: 28px; list-style: none; margin-top: 28px; }
+.gesture-flow > li { position: relative; border: 1px solid #c5d8e8; border-radius: 12px; padding: 18px; background: #f4f8fc; min-width: 0; }
+.gesture-flow-number { display: inline-grid; place-items: center; min-width: 34px; height: 30px; border-radius: 7px; font-size: .85rem; background: #1458aa; color: #fff; font-weight: 700; }
+.gesture-flow svg { display: block; width: 100%; height: 90px; margin-block: 14px 18px; color: #174f7e; }
+.festival .gesture-flow h3 { font-size: 1.1rem; line-height: 1.6; margin-bottom: 13px; min-height: 3.2em; }
+.gesture-flow p { font-size: 1rem; line-height: 1.85; color: #496176; }
+.gesture-flow-arrow { position: absolute; top: 104px; right: -26px; width: 24px; text-align: center; color: #1458aa; font-size: 1.65rem; font-weight: 700; line-height: 1; }
+.gesture-flow-outro { padding-top: 24px; }
+.planet-feature .route-copy h2 { font-size: 1.7rem; }
+.planet-illustration { align-self: center; }
+.planet-illustration img { border-color: #c5d8e8; background: #f5faff; }
+.planet-experience-page .route-lead { color: #174f7e; }
+.planet-missions { background: #f5faff; border: 1px solid #d4e4f0; border-radius: 14px; padding: 32px; margin-top: 36px; }
+.planet-missions > .route-kicker { margin-bottom: 10px; }
+.planet-mission-list { list-style: none; display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 28px; }
+.planet-mission-list > li { display: flex; flex-direction: column; gap: 16px; }
+.planet-mission-list > li > span { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; color: #102c49; background: #ffda81; font-weight: 800; font-size: 1rem; }
+.festival .planet-mission-list h3 { font-size: 1.15rem; margin-bottom: 12px; line-height: 1.7; }
+.planet-mission-list p { font-size: 1rem; line-height: 1.9; color: #496176; }
+.planet-course-photo .route-feature { padding-top: 6px; }
+@media (max-width: 1000px) {
+    .gesture-flow { grid-template-columns: 1fr; gap: 30px; }
+    .gesture-flow > li { display: grid; grid-template-columns: 115px 1fr; gap: 22px; padding: 22px; }
+    .gesture-flow-number { position: absolute; top: 16px; left: 16px; }
+    .gesture-flow svg { grid-column: 1; width: 110px; height: 80px; margin: 34px 0 0; }
+    .gesture-flow > li > div { grid-column: 2; align-self: center; }
+    .festival .gesture-flow h3 { min-height: 0; margin-bottom: 8px; }
+    .gesture-flow-arrow { top: auto; bottom: -30px; left: calc(50% - 12px); right: auto; height: 28px; transform: rotate(90deg); }
+}
+@media (max-width: 700px) {
+    .festival-visit-page #schedule .festival-show-times { gap: 14px; }
+    .festival-visit-page #schedule .festival-show-times li { padding: 18px 8px; border-width: 2px; }
+    .gesture-flow > li { grid-template-columns: 70px 1fr; gap: 16px; padding: 18px 16px; }
+    .gesture-flow svg { width: 70px; height: 65px; margin-top: 30px; }
+    .gesture-flow-number { top: 12px; left: 12px; }
+    .festival .gesture-flow h3 { font-size: 1.1rem; }
+    .gesture-flow p { font-size: 1rem; }
+    .planet-missions { padding: 24px 20px; margin-top: 28px; }
+    .planet-mission-list { grid-template-columns: 1fr; gap: 26px; }
+    .planet-mission-list > li { flex-direction: row; gap: 16px; }
+    .planet-mission-list > li > span { flex: 0 0 36px; width: 36px; height: 36px; }
+    .festival .planet-mission-list h3 { font-size: 1.1rem; }
+    .planet-experience-page .route-copy p { font-size: 1.05rem; }
+}
+
+/* Mars course: the supplied diagram plus readable HTML descriptions. */
+.mars-mission { margin-top: 32px; border-top: 1px solid #d4e4f0; }
+.mars-mission-lead { max-width: 52em; font-size: 1.1rem; line-height: 1.9; color: #496176; }
+.mars-course-map { margin: 26px 0; }
+.mars-course-map a { display: block; border: 1px solid #d4e4f0; border-radius: 12px; overflow: hidden; background: white; }
+.mars-course-map a:focus-visible { outline: 3px solid #1458aa; outline-offset: 4px; }
+.mars-course-map img { display: block; width: 100%; height: auto; }
+.mars-course-map figcaption { margin-top: 10px; font-size: .9rem; line-height: 1.8; color: #496176; }
+.mars-mission-steps { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 18px; list-style: none; padding: 0; }
+.mars-mission-steps li { display: flex; align-items: flex-start; gap: 14px; padding: 22px; border: 1px solid #d4e4f0; border-radius: 12px; background: #f5faff; }
+.mars-mission-steps li > span { display: grid; place-items: center; flex: 0 0 36px; height: 36px; background: #1458aa; border-radius: 50%; color: white; font-weight: 700; }
+.festival .mars-mission-steps h3 { font-size: 1.1rem; line-height: 1.7; margin-bottom: 10px; }
+.mars-mission-steps p,.mars-level-note { font-size: 1rem; line-height: 1.9; color: #496176; }
+.mars-level-note { margin-top: 24px; padding-left: 18px; border-left: 3px solid #b57438; }
+@media (max-width: 900px) { .mars-mission-steps { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media (max-width: 700px) { .mars-mission-steps { grid-template-columns: 1fr; gap: 14px; } .mars-mission-steps li { padding: 18px 16px; } .mars-mission-lead { font-size: 1rem; } }

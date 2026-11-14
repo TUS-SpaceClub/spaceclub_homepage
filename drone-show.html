@@ -1,131 +1,20 @@
 <!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>屋内ドローンショー | 東京理科大学 宇宙クラブ</title>
-    <meta name="description" content="東京理科大学創域理工学部 宇宙クラブが学園祭で挑戦する、学生が0から創る日本初の屋内ドローンショー。3台のドローンによる幻想的なフライト。">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<html lang="ja"><head>
+    <link rel="icon" href="favicon.ico" sizes="any">
+　　<link rel="icon" type="image/png" sizes="400x400" href="favicon.png">
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学生自作ドローンショー｜理大祭2026 東京理科大学 宇宙クラブ</title>
+    <meta name="description" content="学生が機体と制御プログラムを開発。2機の自作ドローンによる屋内の自動操縦ショー。理大祭2026、講義棟K503、観覧無料。">
+    <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="ridaisai.css"><link rel="stylesheet" href="festival-pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
-    <style>
-        /* Specific overrides for the dark show section */
-        .showcase-dark {
-            background-color: #050711;
-            color: #f0f2f5;
-            padding: 8rem 5%;
-        }
-        .showcase-dark h2 {
-            color: #00d2ff;
-        }
-        .showcase-dark p {
-            color: #9ba1b3;
-        }
-        .showcase-img {
-            width: 100%;
-            border-radius: 16px;
-            box-shadow: 0 0 50px rgba(0, 210, 255, 0.2);
-            margin-bottom: 3rem;
-            position: relative;
-        }
-        .showcase-img::after {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: linear-gradient(135deg, rgba(0, 210, 255, 0.1), transparent);
-            pointer-events: none;
-            border-radius: 16px;
-        }
-        .showcase-features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .feature-item {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 2rem;
-            border-radius: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-        }
-        .feature-item h3 {
-            color: #fff;
-            margin-bottom: 1rem;
-            font-size: 1.3rem;
-        }
-    </style>
 </head>
-<body>
-    <div id="navbar-placeholder" data-scrolled="true"></div>
-
-    <header class="page-hero">
-        <div class="page-hero-content fade-in-up">
-            <h1>INDOOR DRONE SHOW</h1>
-            <p>学生が0から創る、屋内ドローンショー</p>
-        </div>
-    </header>
-
-    <main>
-        <section class="section-container">
-            <div class="section-header fade-in">
-                <h2>学園祭での新たな挑戦</h2>
-                <p>飛行ロボットコンテストで培った技術を、エンターテインメントの領域へ</p>
-            </div>
-            <div class="about-content">
-                <div class="about-text fade-in-left">
-                    <p>東京理科大学 宇宙クラブでは、これまでの機体開発や自律制御の知見を活かし、学園祭にて「屋内ドローンショー」を実施します。</p>
-                    <p>ハードウェアの設計から、複数のドローンを同時に制御するソフトウェアシステムまで、すべてを学生の手で一から開発。実現すれば学生として日本初の取り組みです。</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Dark Section for Show Visuals -->
-        <section class="showcase-dark">
-            <div class="section-header fade-in">
-                <h2>The Performance</h2>
-                <p>3台のドローンが織りなす光と軌跡</p>
-            </div>
-            
-            <div style="max-width: 1000px; margin: 0 auto; text-align: center;" class="fade-in-up">
-                <div class="showcase-img">
-                    <img src="images/drone_show_1783418619720.png" alt="屋内ドローンショーのイメージ" style="width: 100%; border-radius: 16px; display: block;">
-                </div>
-                <p style="margin-top: -1rem; margin-bottom: 2rem; color: #8e95a8; font-size: 0.95rem;">※写真はイメージです</p>
-            </div>
-
-            <div class="showcase-features fade-in-up" style="animation-delay: 0.2s;">
-                <div class="feature-item">
-                    <h3>3-Drone </h3>
-                    <p>初挑戦である今年は、3台のドローンからスタート。</p>
-                </div>
-                <div class="feature-item">
-                    <h3>Custom LED System</h3>
-                    <p>マイコンのフルカラーLEDを使用し、LEDライトと通信システムを統合しています。
-                    </p>
-                </div>
-                <div class="feature-item">
-                    <h3>Safety First</h3>
-                    <p>屋内での実施に向け、プロペラガードの完全装備や通信フェールセーフ機能など、観客の安全を最優先したハード・ソフト両面のフェールセーフを実装しています。</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="section-container" style="text-align: center;">
-            <div class="fade-in-up">
-                <h2>Support Our Challenge</h2>
-                <p style="color: var(--text-secondary); margin-bottom: 2rem;">このドローンショーの実現に協力していただける方を募集しています。
-                </p>
-                <a href="index.html#sponsorship" class="btn-primary">Sponsorship Plans</a>
-            </div>
-        </section>
-    </main>
-
-    <div id="footer-placeholder"></div>
-
-    <script src="components.js"></script>
-    <script src="script.js"></script>
-</body>
-</html>
+<body class="festival festival-visit-page">
+<a class="festival-skip" href="#main">本文へスキップ</a>
+<div id="navbar-placeholder" data-scrolled="true"></div>
+<main id="main"><header class="route-header route-container"><a class="route-back" href="ridaisai.html#programs">← 理大祭の企画一覧へ</a><p class="route-kicker">理大祭2026 / 企画の詳細</p><h1>学生自作ドローンショー</h1><p class="route-lead">機体も、制御プログラムも。学生がつくる2機の自動操縦。</p></header><dl class="route-facts route-container"><div><dt>開催日</dt><dd><time datetime="2026-11-20">11月20日（金）</time><time datetime="2026-11-21">・21日（土）</time></dd></div><div><dt>時間</dt><dd>11:00 / 13:00 / 15:00 / 17:00</dd></div><div><dt>会場</dt><dd>講義棟5階 K503</dd></div><div><dt>料金</dt><dd>観覧無料</dd></div></dl><section class="route-container route-feature"><figure class="route-photo"><img src="images/ridaisai-drone-flight.webp" alt="屋内飛行試験中の自作ドローン" loading="lazy"><figcaption>屋内飛行試験の実機。</figcaption></figure><div class="route-copy"><h2>何を自作しているの？</h2><p>機体の設計・製作と、自律飛行の制御プログラムを学生が開発しています。組み立てて終わりではなく、屋内で飛ばすための制御や演出まで取り組んでいます。</p><h2>操縦体験との違いは？</h2><p>ショーでは、プログラムがドローンの飛行を制御します。来場者ご自身がコントローラーを操作する「ドローン操縦体験」とは、別の企画です。</p></div></section>
+<section class="route-container route-section"><h2>ここに注目</h2><div class="route-points"><div><h3>機体からつくる</h3><p>フレームや機器の配置に加え、プロペラガードにもこだわっています。剛性を重視し、しっかりとした構造になるように設計・製作しています。</p></div><div><h3>GPSに頼らない屋内飛行</h3><p>屋内で自律飛行させるための制御プログラムに取り組んでいます。</p></div><div><h3>2機の同時飛行</h3><p>2機の自作ドローンによる同時飛行を実現しました。機体と制御の連携をご覧ください。</p></div></div></section>
+<section class="route-container route-section" id="schedule"><h2>ショーの開始時刻</h2><p>11月20日（金）・21日（土）共通。会場は講義棟K503です。</p><ol class="festival-show-times" aria-label="両日のショー開始時刻"><li><span>第1回</span><time datetime="11:00">11:00</time></li><li><span>第2回</span><time datetime="13:00">13:00</time></li><li><span>第3回</span><time datetime="15:00">15:00</time></li><li><span>第4回</span><time datetime="17:00">17:00</time></li></ol><p class="route-note">当日の安全確認により、実施内容や時間を変更する場合があります。</p></section><section class="route-container route-section"><h2>開発・飛行試験の映像</h2><details class="festival-video-demo"><summary>実機の円旋回試験を見る</summary><div class="festival-video-content"><video controls playsinline preload="none" data-src="videos/ridaisai-drone-circle.mp4" poster="images/ridaisai-drone-circle-poster.webp" aria-label="実機の円旋回試験を見る"></video><p>開発時の円旋回試験の映像です。</p><p class="festival-media-error" hidden>動画を読み込めませんでした。時間をおいてもう一度お試しください。</p></div></details><details class="festival-video-demo"><summary>飛行制御のシミュレーションを見る</summary><div class="festival-video-content"><video controls playsinline preload="none" data-src="videos/ridaisai-development-simulation.mp4" poster="images/ridaisai-simulation-poster.webp" aria-label="飛行制御のシミュレーションを見る"></video><p>飛行制御の検証に使用したシミュレーションです。</p><p class="festival-media-error" hidden>動画を読み込めませんでした。時間をおいてもう一度お試しください。</p></div></details></section><div class="route-container route-end-links"><a class="btn-primary" href="ridaisai.html#programs">ほかの企画を見る</a><a class="festival-text-link" href="ridaisai-access.html">K503への行き方 ↗</a><a class="festival-text-link" href="drone-experience.html">自分で操縦する体験も見る ↗</a></div></main>
+<div id="footer-placeholder"></div>
+<script src="components.js"></script><script src="script.js"></script><script src="ridaisai.js"></script>
+</body></html>

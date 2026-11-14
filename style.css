@@ -920,6 +920,11 @@ footer {
     color: #707070;
 }
 
+footer .footer-nav a {
+    color: #d7e5f1;
+    text-underline-offset: 4px;
+}
+
 /* --- Animations --- */
 .fade-in { opacity: 0; transform: translateY(30px); transition: all 0.8s ease; }
 .fade-in-up { opacity: 0; transform: translateY(40px); transition: all 0.8s ease; }
@@ -1107,4 +1112,18 @@ footer {
     .nav-links { display: none; } /* Simplified for demo */
     .hamburger { display: inline-block; }
     .contact-box { padding: 2rem; }
+}
+
+/* Keep the shared navigation readable with the festival link. */
+.nav-links { gap: 1.15rem; }
+@media (max-width: 1240px) {
+    .nav-links { display: none; }
+    .hamburger { display: inline-block; }
+}
+
+/* Festival headline on the existing homepage hero. */
+.hero h1.festival-home-title {
+    font-size: clamp(2.8rem, 6.5vw, 5.5rem);
+    font-weight: 900;
+    line-height: 1.25;
 }

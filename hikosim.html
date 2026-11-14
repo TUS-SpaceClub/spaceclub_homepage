@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <link rel="icon" href="favicon.ico" sizes="any">
+　　<link rel="icon" type="image/png" sizes="400x400" href="favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HikoSim｜室内飛行シミュレーター体験｜理大祭2026 宇宙クラブ</title>
+    <meta name="description" content="学生自作の室内飛行シミュレーター HikoSim。理大祭2026では11月20日・21日、講義棟K503で体験できます。10:00〜18:00、1回500円。">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hikosim.css">
+    <link rel="stylesheet" href="festival-pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="hikosim-page">
+    <a class="hikosim-skip" href="#experience">本文へスキップ</a>
+    <div id="navbar-placeholder"></div>
+
+    <main>
+        <header class="hero hikosim-hero" id="home">
+            <video id="hikosim-background" class="hikosim-background" data-src="videos/hikosim-background.mp4" data-mobile-src="videos/hikosim-background-mobile.mp4" poster="images/hikosim-background-poster.webp" autoplay muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
+            <div class="hero-content hikosim-hero-content">
+                <p class="hikosim-eyebrow">TUS SPACE CLUB / INDOOR FLIGHT SIMULATOR</p>
+                <h1>HikoSim</h1>
+                <p class="hikosim-catch">操縦席は、ここにある。</p>
+                <p class="hikosim-lead">固定翼機を操縦する、自作シミュレーター。<br>飛行ロボットコンテストの会場を、大画面で飛んでみよう。</p>
+                <div class="hikosim-actions">
+                    <button type="button" class="btn-primary" id="hikosim-open-pv" aria-haspopup="dialog" aria-controls="hikosim-pv-dialog"><span aria-hidden="true">▶</span> PVを音声付きで見る</button>
+                    <a class="btn-secondary" href="#experience">体験のご案内</a>
+                </div>
+                <p class="hikosim-hero-info">理大祭2026 <span aria-hidden="true">/</span> 講義棟 K503 <span aria-hidden="true">/</span> 1回500円</p>
+            </div>
+            <div class="hikosim-hero-bottom">
+                <a href="ridaisai.html#exhibition">← 理大祭の企画一覧へ</a>
+                <button type="button" id="hikosim-toggle-background" aria-controls="hikosim-background">背景動画を再生</button>
+            </div>
+        </header>
+
+        <section class="route-container route-section hikosim-experience" id="experience" aria-labelledby="hikosim-experience-title"><h2 id="hikosim-experience-title">何を、どこで飛ばせるの？</h2><div class="route-points"><div><h3>学生がつくったシミュレーター</h3><p>宇宙クラブが自作した室内飛行シミュレーターです。固定翼機の操縦を体験できます。</p></div><div><h3>飛行ロボットコンテストの会場へ</h3><p>私たちが毎年参加している飛行ロボットコンテスト。その会場の体育館を、シミュレーターの中で飛行できます。</p></div><div><h3>大画面で、臨場感を</h3><p>テレビの大画面で、操縦しているような臨場感を楽しめます。リアルな飛行体験を目指して、体験環境にもこだわっています。</p></div></div></section>
+        <section class="route-container route-section" aria-labelledby="hikosim-exhibition-title"><h2 id="hikosim-exhibition-title">実機の展示も、あわせて。</h2><div class="route-feature"><figure class="route-photo"><img src="images/ridaisai-suisei12.webp" alt="1年生が中心の水曜班による彗星12型" loading="lazy"><figcaption>展示する飛行ロボットの一例：彗星12型。</figcaption></figure><div class="route-copy"><p>学生が製作した飛行ロボットを、機体の設計・製作過程をまとめたポスターとともに展示します。シミュレーターで飛ばす体験と、実機を見る体験をあわせてお楽しみください。</p><p><strong>シミュレーター体験は1回500円。機体展示の観覧は無料です。</strong></p><div class="route-inline-links"><a class="festival-text-link" href="aircraft-suisei12.html">彗星12型を詳しく見る ↗</a><a class="festival-text-link" href="aircraft-fixedwing.html">固定翼機を詳しく見る ↗</a></div></div></div><details class="festival-video-demo"><summary>固定翼機の飛行試験を見る</summary><div class="festival-video-content"><video controls playsinline preload="none" data-src="videos/ridaisai-aircraft-flight.mp4" poster="images/ridaisai-aircraft-video-poster.webp" aria-label="固定翼機の飛行試験を見る"></video><p>製作した固定翼機が体育館の中を飛行する様子です。</p><p class="festival-media-error" hidden>動画を読み込めませんでした。時間をおいてもう一度お試しください。</p></div></details></section>
+        <section class="route-container route-section"><h2>体験のご案内</h2><dl class="hikosim-details"><div><dt>開催日</dt><dd>2026年11月20日（金）・21日（土）</dd></div><div><dt>時間</dt><dd>10:00〜18:00<span class="route-hours-note">時間内いつでも</span></dd></div><div><dt>会場</dt><dd>東京理科大学 野田キャンパス<br>講義棟5階 K503</dd></div><div><dt>料金</dt><dd>HikoSim：1回500円<br>機体展示の観覧：無料</dd></div></dl></section><div class="route-container route-end-links"><a class="btn-primary" href="ridaisai.html#programs">ほかの企画を見る</a><a class="festival-text-link" href="ridaisai-access.html">K503への行き方 ↗</a></div>    </main>
+
+    <dialog id="hikosim-pv-dialog" class="hikosim-pv-dialog" aria-labelledby="hikosim-pv-title">
+        <div class="hikosim-pv-heading"><h2 id="hikosim-pv-title">HikoSim — Promotion Video</h2><button type="button" id="hikosim-close-pv" autofocus>閉じる <span aria-hidden="true">×</span></button></div>
+        <video id="hikosim-full-pv" data-src="videos/hikosim-pv.mp4" controls playsinline preload="none" poster="images/ridaisai-hikosim.webp" aria-label="HikoSimのプロモーション動画全編"></video>
+    </dialog>
+
+    <div id="footer-placeholder"></div>
+    <script src="components.js"></script>
+    <script src="script.js"></script>
+    <script src="hikosim.js"></script>
+    <script src="ridaisai.js"></script>
+</body>
+</html>

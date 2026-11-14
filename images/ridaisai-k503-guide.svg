@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="880" viewBox="0 0 800 880" role="img" aria-labelledby="title desc">
+<title id="title">講義棟からK503へのご案内</title><desc id="desc">講義棟に入り、階段かエレベーターで5階へ。K503教室で宇宙クラブがお待ちしています。移動手順を示すイラストです。</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto"><path d="M1 1L5 5L1 9" fill="none" stroke="#2672bd" stroke-width="2"/></marker></defs>
+<rect width="800" height="880" rx="28" fill="#f1f6fc"/>
+<g font-family="Noto Sans JP, sans-serif" fill="#102c49">
+<text x="44" y="58" font-size="21" font-weight="700" letter-spacing="2">宇宙クラブへのご案内</text>
+<text x="44" y="110" font-size="40" font-weight="800">講義棟 5階 K503</text>
+<g transform="translate(44 148)"><rect width="712" height="190" rx="18" fill="white"/>
+<circle cx="38" cy="38" r="23" fill="#1458aa"/><text x="38" y="46" text-anchor="middle" fill="white" font-size="24" font-weight="700">1</text>
+<g transform="translate(88 24)" stroke="#2c669e" stroke-width="4" fill="#e5f0fc"><rect x="0" y="32" width="190" height="121" rx="5"/><path d="M-8 32L95 0L198 32" fill="#b9d7f3"/><g fill="white"><path d="M20 57h26v22H20zM61 57h26v22H61zM102 57h26v22h-26zM143 57h26v22h-26zM20 95h26v22H20zM143 95h26v22h-26z"/><rect x="72" y="101" width="48" height="52"/></g></g>
+<text x="320" y="74" font-size="29" font-weight="700">まずは講義棟へ</text><text x="320" y="116" font-size="21" fill="#496176">大学公式マップで</text><text x="320" y="147" font-size="21" fill="#496176">建物の位置をチェック。</text></g>
+<path d="M400 351v24" stroke="#2672bd" stroke-width="5" marker-end="url(#arrow)"/>
+<g transform="translate(44 396)"><rect width="712" height="190" rx="18" fill="white"/>
+<circle cx="38" cy="38" r="23" fill="#1458aa"/><text x="38" y="46" text-anchor="middle" fill="white" font-size="24" font-weight="700">2</text>
+<g transform="translate(100 29)" stroke="#2c669e" stroke-width="4"><rect x="0" y="12" width="150" height="135" rx="5" fill="#e5f0fc"/><rect x="21" y="51" width="108" height="96" fill="white"/><path d="M75 51v96"/><rect x="51" y="23" width="48" height="22" rx="3" fill="#1458aa" stroke="none"/><text x="75" y="40" font-size="17" fill="white" text-anchor="middle" stroke="none" font-weight="700">5F</text><path d="M160 145h12v-28h12V89h12V61" fill="none"/></g>
+<text x="320" y="72" font-size="29" font-weight="700">5階に上がろう</text><text x="320" y="114" font-size="21" fill="#496176">階段または</text><text x="320" y="145" font-size="21" fill="#496176">エレベーターで5階へ。</text></g>
+<path d="M400 599v24" stroke="#2672bd" stroke-width="5" marker-end="url(#arrow)"/>
+<g transform="translate(44 644)"><rect width="712" height="190" rx="18" fill="#1458aa"/>
+<circle cx="38" cy="38" r="23" fill="white"/><text x="38" y="46" text-anchor="middle" fill="#1458aa" font-size="24" font-weight="700">3</text>
+<g transform="translate(106 30)" stroke="white" stroke-width="4" fill="none"><rect width="142" height="132" rx="5"/><rect x="22" y="15" width="98" height="32" rx="3" fill="white"/><text x="71" y="39" font-size="23" font-weight="800" stroke="none" fill="#1458aa" text-anchor="middle">K503</text><path d="M71 58v74"/><circle cx="58" cy="95" r="3" fill="white"/><circle cx="83" cy="95" r="3" fill="white"/></g>
+<text x="320" y="73" font-size="32" font-weight="700" fill="white">K503に到着！</text><text x="320" y="116" font-size="21" fill="white">宇宙クラブが</text><text x="320" y="147" font-size="21" fill="white">お待ちしています。</text></g></g></svg>
